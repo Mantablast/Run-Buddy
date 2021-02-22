@@ -99,7 +99,9 @@ header nav ul li a {
   color: #fce138;
 }
 /* Hero Style End */
-
+.flex-row {
+  display: flex;
+}
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
@@ -128,10 +130,33 @@ header nav ul li a {
 .secondary-border {
   border-color: #39a6b2;
 }
-
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 .step h3 {
   color: #024e76;
   font-size: 46px;
+  flex: 1 30%;
+}
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+.step-img img {
+  max-width: 100%;
+}
+.step-info {
+  flex: 2 70%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .step-text p {
   color: #39a6b2;
@@ -142,10 +167,13 @@ header nav ul li a {
   line-height: 1.5;
   color: #024e76;
 }
-/*Trainers Section*/
-.trainers {
-  
+.step-text {
+  flex: 12;
 }
+/*Trainers Section*/
+/* .trainers {
+  
+} */
 .trainer {
   width: 900px;
   margin: 0 auto 30px auto;
@@ -199,9 +227,7 @@ header nav ul li a {
   width: 400px;
   height: 400px;
 }
-.flex-row {
-  display: flex;
-}
+
 .contact-info div {
   width: 410px;
   display: inline-block;
